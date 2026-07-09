@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GAG Ai Tech — Intelligence Systems</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel ="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ------------------------------------------------------------- -->
+  <!-- Nav                                                             -->
+  <!-- ------------------------------------------------------------- -->
+  <nav class="nav">
+    <div class="nav-brand">
+      <svg viewBox="0 0 256 256" aria-hidden="true">
+        <path d="M 256 256 L 128 256 L 0 128 L 128 128 Z M 256 128 L 128 128 L 0 0 L 128 0 Z"/>
+      </svg>
+      <span class="nav-wordmark">GAG Ai Tech</span>
+    </div>
+
+    <div class="nav-pill">
+      <a class="nav-link active" href="#hero">Overview</a>
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#process">Process</a>
+      <a class="nav-link" href="#work">Work</a>
+      <a class="nav-link" href="#about-us">About</a>
+      <a class="nav-link" href="#contact-us">Contact</a>
+    </div>
+
+    <button class="nav-cta">Book a Call</button>
+
+    <button class="nav-burger" id="burgerBtn" aria-label="Open menu">
+      <svg id="burgerIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg id="closeIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mobile-link" href="#hero">Overview</a>
+    <a class="mobile-link" href="#services">Services</a>
+    <a class="mobile-link" href="#process">Process</a>
+    <a class="mobile-link" href="#work">Work</a>
+    <a class="mobile-link" href="#about-us">About</a>
+    <a class="mobile-link" href="#contact-us">Contact</a>
+    <button class="mobile-cta">Book a Call</button>
+  </div>
+
+  <!-- ------------------------------------------------------------- -->
+  <!-- Hero                                                            -->
+  <!-- ------------------------------------------------------------- -->
+  <section class="hero" id="hero">
+    <div class="hero-base hero-zoom-anim" id="heroBase"></div>
+
+    <canvas class="hero-reveal-canvas" id="revealCanvas"></canvas>
+    <div class="hero-reveal-layer" id="revealLayer"></div>
+
+    <div class="hero-heading">
+      <h1>
+        <span class="heading-line italic line1 hero-anim hero-reveal-anim" style="animation-delay:0.25s;">Intelligence for</span>
+        <span class="heading-line line2 hero-anim hero-reveal-anim" style="animation-delay:0.42s;">products that move fast</span>
+      </h1>
+    </div>
+
+    <div class="hero-copy-left hero-anim hero-fade-anim" style="animation-delay:0.7s;">
+      <p>We design AI experiences, automation flows, and intelligent systems that turn ambitious ideas into reliable products.</p>
+    </div>
+
+    <div class="hero-copy-right hero-anim hero-fade-anim" style="animation-delay:0.85s;">
+      <p>From strategy to launch, our team builds the technical foundation and refined experience behind modern AI brands.</p>
+      <button class="hero-cta">Start Building</button>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="services-shell">
+      <div class="services-panel">
+        <div class="services-top">
+          <div class="services-intro">
+            <span class="eyebrow">AI Services</span>
+            <h2>Precision-built services for vision-led AI products.</h2>
+            <p>We blend strategy, product design, and intelligent delivery into services tailored for ambitious startups and modern teams.</p>
+          </div>
+          <div class="services-actions">
+            <button class="services-nav" id="servicesPrev" aria-label="Scroll services left">←</button>
+            <button class="services-nav" id="servicesNext" aria-label="Scroll services right">→</button>
+          </div>
+        </div>
+
+        <div class="services-track" id="servicesTrack">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19L10 13L14 17L20 7" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 7H14" stroke-linecap="round"/><path d="M20 7V13" stroke-linecap="round"/></svg>
+            </div>
+            <div class="service-tag">01 / Strategy</div>
+            <h3>AI Product Strategy</h3>
+            <p>Shape the right roadmap, choose the right models, and define measurable outcomes from day one.</p>
+            <a href="#hero" class="service-link">See how it works <span>→</span></a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 8H16" stroke-linecap="round"/><path d="M8 12H13" stroke-linecap="round"/><path d="M8 16H11" stroke-linecap="round"/></svg>
+            </div>
+            <div class="service-tag">02 / Design</div>
+            <h3>Premium UI Systems</h3>
+            <p>Craft intuitive experiences with refined visuals, motion, and storytelling that feel instantly premium.</p>
+            <a href="#hero" class="service-link">Explore the process <span>→</span></a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12H19" stroke-linecap="round"/><path d="M12 5L19 12L12 19" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="service-tag">03 / Build</div>
+            <h3>Automation & AI Delivery</h3>
+            <p>Bring products to life with reliable implementation, workflow automation, and smart integrations.</p>
+            <a href="#hero" class="service-link">Launch your build <span>→</span></a>
+          </article>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots" aria-label="Carousel pagination">
+          <button class="carousel-dot active" data-index="0" aria-label="Show first slide"></button>
+          <button class="carousel-dot" data-index="1" aria-label="Show second slide"></button>
+          <button class="carousel-dot" data-index="2" aria-label="Show third slide"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="process">
+    <div class="section-shell">
+      <div class="section-heading section-reveal">
+        <span class="eyebrow">Our Process</span>
+        <h2>From concept to launch with calm momentum.</h2>
+        <p>We keep each phase focused, transparent, and measurable so your product can scale with confidence.</p>
+      </div>
+
+      <div class="process-grid">
+        <article class="process-card section-reveal">
+          <span>01 / Discover</span>
+          <h3>Understand the real opportunity</h3>
+          <p>We map user needs, product ambition, and technical constraints so the path forward is crystal clear.</p>
+        </article>
+        <article class="process-card section-reveal">
+          <span>02 / Shape</span>
+          <h3>Design an experience that feels effortless</h3>
+          <p>We turn strategy into interfaces, flows, and brand moments that look premium and feel intuitive.</p>
+        </article>
+        <article class="process-card section-reveal">
+          <span>03 / Build</span>
+          <h3>Implement smart systems quickly</h3>
+          <p>From automation to custom AI features, we make the build reliable, scalable, and ready to grow.</p>
+        </article>
+        <article class="process-card section-reveal">
+          <span>04 / Optimize</span>
+          <h3>Refine based on real usage</h3>
+          <p>We stay close after launch to improve performance, usability, and long-term value.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="section-shell">
+      <div class="section-heading section-reveal">
+        <span class="eyebrow">Selected Work</span>
+        <h2>High-impact systems for fast-moving brands.</h2>
+        <p>Each engagement combines sharp strategy, polished product design, and dependable delivery.</p>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card featured section-reveal">
+          <div class="work-content">
+            <span class="work-label">AI Operations Platform</span>
+            <h3>Turn scattered workflows into one intelligent command center.</h3>
+            <p>We united onboarding, analytics, and support into a single experience that cut friction and improved adoption across every team.</p>
+          </div>
+          <div class="work-visual" aria-hidden="true">
+            <div class="dashboard-preview"><span></span></div>
+            <div class="dashboard-preview"><span></span><span></span></div>
+          </div>
+        </article>
+
+        <article class="work-card section-reveal">
+          <span class="work-label">Growth Studio</span>
+          <h3>Launch-ready AI experiences for modern SaaS companies.</h3>
+          <p>From onboarding kits to high-conversion landing flows, we help ambitious teams move quicker with less noise.</p>
+        </article>
+
+        <article class="work-card section-reveal">
+          <span class="work-label">Automation Lab</span>
+          <h3>Boost speed with custom automations and elegant integrations.</h3>
+          <p>We connect the tools your team already uses and layer in intelligence where it matters most.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us" id="about-us">
+    <div class="about-shell">
+      <div class="about-grid">
+        <div class="about-copy about-animate">
+          <span class="eyebrow">About Us</span>
+          <h2>We create intelligent systems with calm clarity and real-world impact.</h2>
+          <p>Our studio blends AI strategy, product thinking, and design craft to shape platforms that feel clear, confident, and future-ready.</p>
+          <p>From early concepts to launch-ready systems, we focus on thoughtful execution and measurable value.</p>
+
+          <div class="about-stats">
+            <div class="about-stat">
+              <strong>12+</strong>
+              <span>Years of combined experience</span>
+            </div>
+            <div class="about-stat">
+              <strong>100%</strong>
+              <span>Dedicated to quality delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual about-animate" aria-hidden="true">
+          <div class="about-photo"></div>
+          <div class="about-overlay about-card">
+            <div>
+              <div class="topline">Vision</div>
+              <h3>Designing systems that scale with ambition.</h3>
+              <p>We create refined interfaces, thoughtful experiences, and durable digital foundations for brands that want to lead.</p>
+            </div>
+            <div class="about-pill">Trusted by fast-moving teams</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="section-shell">
+      <div class="section-heading section-reveal">
+        <span class="eyebrow">Testimonials</span>
+        <h2>Trusted by founders, operators, and product teams.</h2>
+        <p>We focus on outcomes that matter: clarity, momentum, and polished execution from day one.</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <article class="testimonial-card section-reveal">
+          <p>“The experience felt elevated from the first call. They understood both the product vision and the feeling we wanted customers to have.”</p>
+          <strong>— Maya Chen, Founder</strong>
+        </article>
+        <article class="testimonial-card section-reveal">
+          <p>“Every detail was thoughtful. The final product is fast, elegant, and already helping us move faster as a team.”</p>
+          <strong>— Daniel Ross, Product Lead</strong>
+        </article>
+        <article class="testimonial-card section-reveal">
+          <p>“Their process made complex decisions feel simple. We launched with more confidence and much less friction.”</p>
+          <strong>— Nina Patel, Operations Director</strong>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="section-shell">
+      <div class="faq-shell">
+        <div class="section-heading compact section-reveal">
+          <span class="eyebrow">Frequently asked</span>
+          <h2>Everything you need to know before we begin.</h2>
+          <p>We keep the collaboration simple, strategic, and focused on momentum.</p>
+        </div>
+
+        <div class="faq-list">
+          <button class="faq-item section-reveal">
+            <span>What kinds of AI products do you build?</span>
+            <small>We build product strategy, AI-facing interfaces, automation systems, internal copilots, and launch-ready digital experiences.</small>
+          </button>
+          <button class="faq-item section-reveal">
+            <span>Can you help if we already have an idea?</span>
+            <small>Absolutely. We can shape rough concepts into a clear roadmap, refined direction, and practical implementation plan.</small>
+          </button>
+          <button class="faq-item section-reveal">
+            <span>How quickly can a project move?</span>
+            <small>Timelines depend on scope, but we are structured to move quickly without sacrificing depth, quality, or clarity.</small>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us" id="contact-us">
+    <div class="contact-shell">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="eyebrow">Contact Us</span>
+          <h2>Let’s shape your next AI product together.</h2>
+          <p>Share your ambition and we’ll help map a clear, refined path from concept to launch.</p>
+
+          <div class="contact-points">
+            <div class="contact-point">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="M4 8l8 6 8-6"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <span>hello@gagai.tech</span>
+              </div>
+            </div>
+            <div class="contact-point">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-6-4.35-6-10a6 6 0 1112 0c0 5.65-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg>
+              </div>
+              <div>
+                <strong>Location</strong>
+                <span>Remote worldwide • Available for global projects</span>
+              </div>
+            </div>
+            <div class="contact-point">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M8 8h8"/><path d="M8 12h8"/><path d="M8 16h5"/></svg>
+              </div>
+              <div>
+                <strong>Focus</strong>
+                <span>Strategy, design systems, AI products, and launch support.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Start your project</h3>
+          <p>Tell us a bit about your idea and we’ll follow up with a tailored next step.</p>
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" />
+          </div>
+          <div class="field">
+            <label for="message">Project brief</label>
+            <textarea id="message" placeholder="Tell us about your goals and timeline"></textarea>
+          </div>
+          <button class="contact-btn">Send Inquiry</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="footer-shell">
+      <div class="footer-brand">
+        <svg viewBox="0 0 256 256" aria-hidden="true">
+          <path d="M 256 256 L 128 256 L 0 128 L 128 128 Z M 256 128 L 128 128 L 0 0 L 128 0 Z"/>
+        </svg>
+        <span>GAG AI Tech</span>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Overview</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#work">Work</a>
+        <a href="#about-us">About</a>
+        <a href="#contact-us">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // -----------------------------------------------------------------
+    // Assets — swap these for real brand photography/renders.
+    // Base = the "surface" state, Reveal = what appears inside the spotlight.
+    // -----------------------------------------------------------------
+    
+  </script>
+</body>
+</html>
